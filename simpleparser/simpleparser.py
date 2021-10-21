@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from copy import deepcopy
-from typing import Iterable, Final, Set, Callable, List, Union, Tuple, Any, Literal, Optional
-from regex import regex
 from math import inf
+from typing import Iterable, Final, Set, Callable, List, Union, Tuple, Any, Literal, Optional
+
+from regex import regex
 
 
 class ParseError(ValueError):

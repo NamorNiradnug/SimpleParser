@@ -1,13 +1,18 @@
 import setuptools
 
+with open("README.md") as readme:
+    long_description = readme.read()
+
 setuptools.setup(
     name="simpleparser",
-    version="0.1.1",
+    version="0.1.2",
     author="NamorNiradnug",
     author_email="roma57linux@gmail.com",
     packages=["simpleparser"],
     tests_require=["test.py"],
     description="Simple library with simple parser which parses simple expressions.",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     license="MIT",
     url="https://github.com/NamorNiradnug/SimpleParser",
     project_urls={
