@@ -1,7 +1,7 @@
 import setuptools
 
 setuptools.setup(
-    name="simple-parser",
+    name="simpleparser",
     version="0.1.1",
     author="NamorNiradnug",
     author_email="roma57linux@gmail.com",
