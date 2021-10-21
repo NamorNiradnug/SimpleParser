@@ -2,17 +2,10 @@ import setuptools
 
 setuptools.setup(
     name="simple-parser",
-<<<<<<< HEAD
     version="0.1.1",
     author="NamorNiradnug",
     author_email="roma57linux@gmail.com",
     packages=["simpleparser"],
-=======
-    version="0.1",
-    author="NamorNiradnug",
-    author_email="roma57linux@gmail.com",
-    packages=["parser"],
->>>>>>> origin/main
     tests_require=["test.py"],
     description="Simple library with simple parser which parses simple expressions.",
     license="MIT",
