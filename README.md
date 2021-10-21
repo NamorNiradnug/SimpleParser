@@ -3,4 +3,4 @@ Basic expressions parser.
 
 # Installing
 Installing via pip:
-```$ pip install simple-parser```
+```$ pip install simpleparser```
