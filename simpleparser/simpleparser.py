@@ -18,10 +18,10 @@ class Operator:
                  signs: Iterable[str] = tuple(),
                  priority: int = -1):
         """
-        :param name: name of operator. Can be used in boolean functions expressions, but only explicitly separated by spaces from other.
+        :param name: name of operator. Can be used in functions expressions, but only explicitly separated by spaces from other.
         :param operator_type: unary (1) or binary (2)
-        :param func: function which is realisation of this boolean operator in python.
-        :param signs: operator denotations.
+        :param func: function which is realisation of this operator in python.
+        :param signs: operator denotatiotns.
         :param priority: operator priority (more positive value is less priority). -1 is lowest priority.
         """
         self.func = func
