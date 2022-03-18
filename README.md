@@ -9,8 +9,8 @@ $ pip install simpleparser
 
 # Usage
 ## Parser
-To just parse something, use `Parser.parse` method. With `Parser` you can describe different parsers.
-There is ready `Default.parser`. 
+To simply parse something, use `Parser.parse` method. With `Parser` you can describe different parsers.
+There is ready-made `Defaults.parser`. 
 ```python
 from simpleparser import Defaults
 expr = "a + b / 2"
@@ -19,8 +19,8 @@ parsed(a=2, b=4) # returns 4.0
 ```
 `Parser.parse` returns callable `ParsedExpression` object.
 ### Custom parsers
-`Parser` could be easily configured. It describes by set of operators and constants types (such numbers or booleans).
-See documentation for `Operator` and `ConstantType` below.
+`Parser` can be easily configured. It is described by a set of operators and constants types (such as numbers or booleans).
+See the `Operator` and `ConstantType` documentation below.
 ```python
 from simpleparser import Parser, Defaults
 my_parser = Parser(
@@ -28,9 +28,9 @@ my_parser = Parser(
     constants=[Defaults.integers_decimal, Defaults.float_point]
 )
 ```
-`my_parser` here parses simple math expressions with 4 basic operators and decimal numbers, for example `1 + 2.0 * a`.
+Here `my_parser` parses simple math expressions with 4 basic operators and decimal numbers, for example `1 + 2.0 * a`.
 ## Operator
-Creating custom operator:
+Creating a custom operator:
 ```python
 from simpleparser import Operator, Parser
 in_op = Operator(
@@ -47,12 +47,12 @@ el_in_set_checker(a=1, A={1, 2, 3}) # True
 el_in_set_checker(a=0, A={1, 2, 3}) # False
 ```
 ## ConstantType
-Describes type of constant which can be use in expression. Here is realisation of `Defaults.boolean`:
+Describes a type of constants which can be used in expression. Here is the definition of `Defaults.boolean`:
 ```python
 from simpleparser import ConstantType
 boolean = ConstantType(r"(True|False|true|false)$", lambda s: True if s in {"True", "true"} else False)
 ```
-Parser with that constant type replaces words which matched by `boolean`'s regular expression to `True` or `False`.
+Parser with this constant type replaces words which are matched by the `boolean`'s regular expression to `True` or `False`.
 ```python
 parser = Parser([],[boolean])
 parser.parse("True")() # True
