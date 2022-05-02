@@ -4,7 +4,7 @@ from copy import deepcopy
 from math import inf
 from typing import Iterable, Final, Set, Callable, List, Union, Tuple, Any, Literal, Optional
 
-from regex import regex
+import re as regex
 
 
 class ParseError(ValueError):
