@@ -5,7 +5,7 @@ with open("README.md") as readme:
 
 setuptools.setup(
     name="simpleparser",
-    version="0.1.2",
+    version="0.1.3",
     author="NamorNiradnug",
     author_email="roma57linux@gmail.com",
     packages=["simpleparser"],
